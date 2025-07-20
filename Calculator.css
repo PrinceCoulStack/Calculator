@@ -1,0 +1,94 @@
+/* Reset defaults and set basic box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Set background and center everything */
+body {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Calculator container */
+#container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+/* Result display area */
+#result {
+  background-color: #e6e6e6;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: right;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  min-height: 40px;
+}
+
+/* Buttons container */
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+  gap: 5px;
+}
+
+/* Style for all buttons */
+button {
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #357ABD;
+}
+
+/* Different style for operators */
+button.operator {
+  background-color: #f39c12;
+}
+
+button.operator:hover {
+  background-color: #d68910;
+}
+
+/* Erase or Clear buttons */
+#erase {
+  background-color: #e74c3c;
+}
+#erase:hover {
+  background-color: #c0392b;
+}
+
+/* Equal button */
+#equal {
+  background-color: #2ecc71;
+}
+#equal:hover {
+  background-color: #27ae60;
+}
